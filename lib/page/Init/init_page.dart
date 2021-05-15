@@ -17,6 +17,7 @@ class _InitPageState extends ModularState<InitPage, InitController> {
     return LayoutBuilder(builder: (context, constraints) {
       return Scaffold(
         body: Container(
+          decoration: BoxDecoration(gradient: AppGradients.linear),
           child: Align(
             alignment: Alignment.center,
             child: ListView(
@@ -25,16 +26,9 @@ class _InitPageState extends ModularState<InitPage, InitController> {
                 LogoCenteWidget(),
                 const SizedBox(height: 20),
                 // card
-                Container(
-                  decoration: BoxDecoration(gradient: AppGradients.linear),
-                  child: Column(
-                    children: [
-                      CardViewEmpresa(),
-                      const SizedBox(height: 10),
-                      CardViewProfessional()
-                    ],
-                  ),
-                )
+                CardViewEmpresa(),
+                const SizedBox(height: 10),
+                CardViewProfessional()
               ],
             ),
           ),
