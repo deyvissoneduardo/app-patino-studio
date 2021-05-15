@@ -3,6 +3,7 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:patino1/core/exports_app_core.dart';
+import 'package:patino1/page/Init/init_page.dart';
 import 'package:patino1/page/courses/courses_page.dart';
 import 'package:patino1/page/info/info_page.dart';
 import 'package:patino1/page/services/service_page.dart';
@@ -26,7 +27,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
             setState(() => _currentIndex = index);
           },
           children: [
-            Container(color: Colors.brown),
+            InitPage(),
             ServicePage(),
             CoursesPage(),
             InfoPage(),

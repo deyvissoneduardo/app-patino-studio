@@ -33,7 +33,7 @@ dependencies:
   mobx:
   flutter_modular:
   flutter_icons: ^1.1.0
-    
+  auto_size_text:  
 dev_dependencies:
   flutter_test:
     sdk: flutter
