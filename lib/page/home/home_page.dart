@@ -5,6 +5,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:patino1/core/exports_app_core.dart';
 import 'package:patino1/page/courses/courses_page.dart';
 import 'package:patino1/page/info/info_page.dart';
+import 'package:patino1/page/services/service_page.dart';
 
 import 'controller/home_controller.dart';
 
@@ -26,9 +27,8 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
           },
           children: [
             Container(color: Colors.brown),
-            Container(color: Colors.red),
+            ServicePage(),
             CoursesPage(),
-            Container(color: Colors.blue),
             InfoPage(),
           ],
         ),
@@ -57,12 +57,6 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
             BottomNavyBarItem(
               icon: Icon(Icons.archive_outlined),
               title: Text('Cursos', style: AppTextStyle.textPink15),
-              activeColor: AppColors.corIconPink100,
-              textAlign: TextAlign.center,
-            ),
-            BottomNavyBarItem(
-              icon: Icon(MaterialIcons.people_outline),
-              title: Text('Profissonal', style: AppTextStyle.textPink15),
               activeColor: AppColors.corIconPink100,
               textAlign: TextAlign.center,
             ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:patino1/core/exports_app_core.dart';
 
+// ignore: must_be_immutable
 class DescriptionWidget extends StatefulWidget {
   String description;
   DescriptionWidget({Key key, this.description}) : super(key: key);
