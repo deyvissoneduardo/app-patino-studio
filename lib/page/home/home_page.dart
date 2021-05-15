@@ -3,6 +3,7 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:patino1/core/exports_app_core.dart';
+import 'package:patino1/page/courses/courses_page.dart';
 import 'package:patino1/page/info/info_page.dart';
 
 import 'controller/home_controller.dart';
@@ -26,7 +27,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
           children: [
             Container(color: Colors.brown),
             Container(color: Colors.red),
-            Container(color: Colors.green),
+            CoursesPage(),
             Container(color: Colors.blue),
             InfoPage(),
           ],
