@@ -8,6 +8,7 @@ class AppBarInfo extends PreferredSize {
             preferredSize: Size(double.infinity, 56),
             child: AppBar(
                 backgroundColor: AppColors.colorCotainerWrite,
+                elevation: 0,
                 title: Container(
                     alignment: Alignment.center,
                     child:
