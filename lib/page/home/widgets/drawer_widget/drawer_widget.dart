@@ -12,12 +12,10 @@ class DrawerWidget extends Drawer {
               UserAccountsDrawerHeader(
                 accountName: Text("studio"),
                 accountEmail: Text("studio@gmail.com"),
-                currentAccountPicture: Center(
-                  child: CircleAvatar(
-                    radius: 30.0,
-                    backgroundImage: NetworkImage(urlLogo),
-                    backgroundColor: Colors.transparent,
-                  ),
+                currentAccountPicture: CircleAvatar(
+                  radius: 30.0,
+                  backgroundImage: NetworkImage(urlLogo),
+                  backgroundColor: Colors.transparent,
                 ),
               ),
               ListTile(

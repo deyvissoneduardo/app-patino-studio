@@ -33,8 +33,7 @@ class _SplashScreenPageState
             Container(
               width: MediaQuery.of(context).size.width * controller.width,
               height: MediaQuery.of(context).size.height * controller.height,
-              child: Image.network(
-                  'http://studiopatino.com.br/modelo-site/Logo-favicon.png'),
+              child: Image.asset('assets/logo.png'),
             ),
             const SizedBox(height: 8),
             CircularProgressIndicator()

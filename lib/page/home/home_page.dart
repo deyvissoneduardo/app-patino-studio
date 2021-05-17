@@ -8,7 +8,7 @@ import 'package:patino1/page/info/info_page.dart';
 import 'package:patino1/page/services/service_page.dart';
 
 import 'controller/home_controller.dart';
-import 'widgets/botton_navy/botton_navy_widget/botton_navy_widget.dart';
+import 'widgets/botton_navy/botton_navy_widget.dart';
 
 class HomePage extends StatefulWidget {
   @override
