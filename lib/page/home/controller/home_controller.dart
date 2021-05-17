@@ -7,7 +7,7 @@ class HomeController = _HomeControllerBase with _$HomeController;
 
 abstract class _HomeControllerBase with Store implements Disposable {
   final pageController = PageController();
-
+  int currentIndx = 0;
   @action
   void dispose() => pageController.dispose();
 }
