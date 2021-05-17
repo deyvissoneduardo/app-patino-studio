@@ -16,10 +16,11 @@ class AppColors {
   //icon
   static final Color corIconWrite = Colors.white;
   static final Color corIconPink100 = Colors.pink[100];
+  static final Color corIconPink200 = Colors.pink[200];
   static final Color corIconWrite200 = Colors.pink[400];
 
   // container
   static final Color colorCotainerWrite = Colors.white;
   static final Color colorPink100 = Colors.pink[50];
-  static final Color colorPink200 = Colors.pink[400];
+  static final Color colorPink200 = Colors.pink[200];
 }

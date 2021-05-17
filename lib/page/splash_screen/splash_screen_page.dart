@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:patino1/core/app_colors.dart';
 import 'package:patino1/core/app_gradients.dart';
 import 'package:patino1/shared/constantes.dart';
 
@@ -27,7 +28,6 @@ class _SplashScreenPageState
     return Scaffold(
       body: Container(
         alignment: Alignment.center,
-        decoration: BoxDecoration(gradient: AppGradients.linear),
         child: Column(
           children: [
             Container(
@@ -36,7 +36,9 @@ class _SplashScreenPageState
               child: Image.asset('assets/logo.png'),
             ),
             const SizedBox(height: 8),
-            CircularProgressIndicator()
+            CircularProgressIndicator(
+              backgroundColor: AppColors.colorPink200,
+            )
           ],
         ),
       ),

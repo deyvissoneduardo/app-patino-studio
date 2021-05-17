@@ -10,7 +10,7 @@ class BottonNavyWidget extends BottomNavyBarItem {
       : super(
           icon: icon,
           title: Text(_title, style: AppTextStyle.textPink15),
-          activeColor: AppColors.corIconPink100,
+          activeColor: AppColors.corIconPink200,
           textAlign: TextAlign.center,
         );
 }

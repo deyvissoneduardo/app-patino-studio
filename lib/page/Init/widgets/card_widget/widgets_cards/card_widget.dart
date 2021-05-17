@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:patino1/core/app_gradients.dart';
 
 import 'Icon_card_widget.dart';
 
@@ -31,9 +32,10 @@ class _CardWidgetState extends State<CardWidget> {
         child: Card(
           elevation: 10,
           shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           color: Colors.white,
           child: Container(
+            decoration: BoxDecoration(gradient: AppGradients.linear),
             height: 150,
             width: constraints.maxWidth,
             child: Padding(

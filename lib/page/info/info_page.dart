@@ -23,7 +23,6 @@ class _InfoPageState extends ModularState<InfoPage, InfoController> {
         appBar: AppBarInfo(),
         body: Container(
           padding: const EdgeInsets.all(10),
-          decoration: BoxDecoration(gradient: AppGradients.linear),
           child: Column(
             children: [
               PhotoInfoWidget(),

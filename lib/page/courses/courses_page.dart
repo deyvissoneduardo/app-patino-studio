@@ -24,7 +24,6 @@ class _CoursesPageState extends ModularState<CoursesPage, CoursesController> {
           appBar: AppBarCourses(),
           body: Container(
               padding: EdgeInsets.symmetric(horizontal: 10),
-              decoration: BoxDecoration(gradient: AppGradients.linear),
               child: ContentCardCourse()));
     });
   }

@@ -1,6 +1,7 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:patino1/core/app_colors.dart';
 import 'package:patino1/page/Init/init_page.dart';
 import 'package:patino1/page/courses/courses_page.dart';
 import 'package:patino1/page/home/widgets/drawer_widget/drawer_widget.dart';
@@ -32,7 +33,6 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
               InfoPage(),
             ],
           ),
-          drawer: DrawerWidget(context),
           bottomNavigationBar: BottomNavyBar(
             selectedIndex: controller.currentIndx,
             showElevation: true,

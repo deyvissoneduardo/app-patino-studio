@@ -22,7 +22,6 @@ class _ServicePageState extends ModularState<ServicePage, ServiceController> {
       return Scaffold(
         appBar: AppBarService(),
         body: Container(
-          decoration: BoxDecoration(gradient: AppGradients.linear),
           child: Container(
               child: GridView.count(
                   primary: false,
