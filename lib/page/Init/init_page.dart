@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:patino1/core/app_gradients.dart';
 import 'package:patino1/page/Init/controller/init_controller.dart';
 import 'package:patino1/page/Init/widgets/card_widget/card_view_empresa.dart';
 import 'package:patino1/page/Init/widgets/card_widget/card_view_professional.dart';
@@ -17,7 +16,6 @@ class _InitPageState extends ModularState<InitPage, InitController> {
     return LayoutBuilder(builder: (context, constraints) {
       return Scaffold(
         body: Container(
-          decoration: BoxDecoration(gradient: AppGradients.linear),
           child: Align(
             alignment: Alignment.center,
             child: ListView(

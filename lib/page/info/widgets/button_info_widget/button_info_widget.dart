@@ -20,9 +20,6 @@ class _ButtonInfoWidgetState extends State<ButtonInfoWidget> {
   Widget build(BuildContext context) {
     return TextButton(
         onPressed: this.widget.onPressed,
-        child: Text(
-          this.widget.titleButton,
-          style: AppTextStyle.textWrite15,
-        ));
+        child: Text(this.widget.titleButton, style: AppTextStyle.textPink15));
   }
 }

@@ -17,7 +17,7 @@ class _PhotoInfoWidgetState extends State<PhotoInfoWidget> {
         child: Icon(
           Icons.person,
           size: 150,
-          color: AppColors.corIconWrite,
+          color: AppColors.colorPink200,
         ));
   }
 }

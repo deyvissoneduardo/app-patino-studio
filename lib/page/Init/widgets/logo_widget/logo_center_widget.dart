@@ -8,7 +8,10 @@ class LogoCenteWidget extends StatelessWidget {
     return SizedBox(
         height: 250,
         width: 150,
-        child: Image.network(
-            'http://studiopatino.com.br/modelo-site/Logo-favicon.png'));
+        child: CircleAvatar(
+          radius: 100,
+          backgroundColor: Color(0xff00ffffff),
+          child: Image.asset('assets/logo.png'),
+        ));
   }
 }

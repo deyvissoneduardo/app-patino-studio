@@ -12,6 +12,6 @@ class _EmailInfoWidgetState extends State<EmailInfoWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        child: Text('cliente@gmail.com', style: AppTextStyle.textWrite15));
+        child: Text('cliente@gmail.com', style: AppTextStyle.textPink20));
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:patino1/core/app_gradients.dart';
 import 'package:patino1/core/exports_app_core.dart';
 import 'package:patino1/page/courses/widgets/description_course_widget/description_course_widget.dart';
 import 'package:patino1/page/courses/widgets/title_course_widget/title_course_widget.dart';
@@ -29,6 +30,7 @@ class _ContentCardCourseState extends State<ContentCardCourse> {
     do {
       i += 1;
       items.add(Container(
+        decoration: BoxDecoration(gradient: AppGradients.linear),
         width: constrainsts.maxHeight,
         child: Card(
           elevation: 8,
@@ -56,7 +58,7 @@ class _ContentCardCourseState extends State<ContentCardCourse> {
           ),
         ),
       ));
-    } while (i <= 100);
+    } while (i <= 10);
     return items;
   }
 }
