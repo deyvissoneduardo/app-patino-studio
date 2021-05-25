@@ -23,6 +23,7 @@ class _CoursesPageState extends ModularState<CoursesPage, CoursesController> {
       return Scaffold(
           appBar: AppBarCourses(),
           body: Container(
+              decoration: BoxDecoration(color: AppColors.colorCotainerPink100),
               padding: EdgeInsets.symmetric(horizontal: 10),
               child: ContentCardCourse()));
     });

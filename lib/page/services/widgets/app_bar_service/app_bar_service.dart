@@ -8,7 +8,7 @@ class AppBarService extends PreferredSize {
             preferredSize: Size(double.infinity, 56),
             child: AppBar(
                 elevation: 0,
-                backgroundColor: AppColors.colorCotainerWrite,
+                backgroundColor: AppColors.colorCotainerPink100,
                 title: Container(
                   alignment: Alignment.center,
                   child: Text('Nossos Serviços',

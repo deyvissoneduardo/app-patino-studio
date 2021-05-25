@@ -36,9 +36,7 @@ class _SplashScreenPageState
               child: Image.asset('assets/logo.png'),
             ),
             const SizedBox(height: 8),
-            CircularProgressIndicator(
-              backgroundColor: AppColors.colorPink200,
-            )
+            CircularProgressIndicator()
           ],
         ),
       ),

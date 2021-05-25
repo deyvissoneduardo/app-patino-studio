@@ -21,6 +21,6 @@ class AppColors {
 
   // container
   static final Color colorCotainerWrite = Colors.white;
-  static final Color colorPink100 = Colors.pink[50];
-  static final Color colorPink200 = Colors.pink[200];
+  static final Color colorCotainerPink100 = Colors.pink[50];
+  static final Color colorCotainerPink200 = Colors.pink[200];
 }

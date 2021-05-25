@@ -5,5 +5,5 @@ class AppGradients {
   static final linear = LinearGradient(
       begin: Alignment.topLeft,
       end: Alignment.bottomRight,
-      colors: [AppColors.colorPink100, AppColors.colorPink200]);
+      colors: [AppColors.colorCotainerPink200, AppColors.colorCotainerPink200]);
 }

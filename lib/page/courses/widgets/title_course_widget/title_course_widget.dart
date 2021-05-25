@@ -13,6 +13,6 @@ class TitleCourseWidget extends StatefulWidget {
 class _TitleCourseWidgetState extends State<TitleCourseWidget> {
   @override
   Widget build(BuildContext context) {
-    return Text(this.widget.title, style: AppTextStyle.textPinkBold20);
+    return Text(this.widget.title, style: AppTextStyle.textBoldWrite20);
   }
 }

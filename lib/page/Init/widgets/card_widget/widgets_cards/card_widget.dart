@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:patino1/core/app_gradients.dart';
+import 'package:patino1/core/exports_app_core.dart';
 
 import 'Icon_card_widget.dart';
 
@@ -77,6 +78,7 @@ class _CardWidgetState extends State<CardWidget> {
           children: [
             Expanded(
               child: Container(
+                alignment: Alignment.center,
                 child: _titleCard(),
               ),
             )
@@ -99,28 +101,19 @@ class _CardWidgetState extends State<CardWidget> {
   }
 
   Widget _titleCard() {
-    return AutoSizeText(
-      this.widget.title,
-      minFontSize: 4,
-      maxLines: 2,
-      style: TextStyle(
-          color: this.widget.corText,
-          fontSize: 20,
-          fontWeight: FontWeight.bold),
-    );
+    return AutoSizeText(this.widget.title,
+        overflow: TextOverflow.ellipsis,
+        minFontSize: 4,
+        maxLines: 2,
+        style: AppTextStyle.textWrite20);
   }
 
   ///content card
   Widget _contentCard() {
-    return AutoSizeText(
-      this.widget.subTitle,
-      minFontSize: 4,
-      overflow: TextOverflow.ellipsis,
-      maxLines: 5,
-      style: TextStyle(
-        color: this.widget.corText,
-        fontSize: 15,
-      ),
-    );
+    return AutoSizeText(this.widget.subTitle,
+        minFontSize: 4,
+        overflow: TextOverflow.ellipsis,
+        maxLines: 5,
+        style: AppTextStyle.textBlack20);
   }
 }

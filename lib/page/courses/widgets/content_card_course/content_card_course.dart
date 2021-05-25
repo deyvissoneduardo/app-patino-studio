@@ -30,31 +30,33 @@ class _ContentCardCourseState extends State<ContentCardCourse> {
     do {
       i += 1;
       items.add(Container(
-        decoration: BoxDecoration(gradient: AppGradients.linear),
         width: constrainsts.maxHeight,
         child: Card(
           elevation: 8,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-          child: Row(
-            children: [
-              Container(
-                width: MediaQuery.of(context).size.width / 3,
-                height: MediaQuery.of(context).size.height,
-                child: Icon(Icons.wysiwyg_outlined,
-                    size: 100, color: AppColors.corTextBlack),
-              ),
-              const SizedBox(width: 8),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  TitleCourseWidget(title: 'Curso $i'),
-                  const SizedBox(width: 5),
-                  DescriptionWidget(description: 'Descrição do curso')
-                ],
-              )
-            ],
+          child: Container(
+            decoration: BoxDecoration(gradient: AppGradients.linear),
+            child: Row(
+              children: [
+                Container(
+                  width: MediaQuery.of(context).size.width / 3,
+                  height: MediaQuery.of(context).size.height,
+                  child: Icon(Icons.wysiwyg_outlined,
+                      size: 100, color: AppColors.corTextBlack),
+                ),
+                const SizedBox(width: 8),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    TitleCourseWidget(title: 'Curso $i'),
+                    const SizedBox(width: 5),
+                    DescriptionWidget(description: 'Descrição do curso')
+                  ],
+                )
+              ],
+            ),
           ),
         ),
       ));

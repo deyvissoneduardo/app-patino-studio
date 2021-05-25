@@ -16,13 +16,14 @@ class _CardServiceState extends State<CardService> {
   Widget build(BuildContext context) {
     return GridTile(
       child: Container(
-        decoration: BoxDecoration(gradient: AppGradients.linear),
         child: Card(
             elevation: 8,
-            color: Color((Random().nextDouble() * 0xFFFFFF).toInt() << 0)
-                .withOpacity(1.0),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: Container(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisSize: MainAxisSize.max,
                 children: [
                   Icon(Icons.perm_contact_calendar_rounded, size: 50),
                   const SizedBox(height: 5),

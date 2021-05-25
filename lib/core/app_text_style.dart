@@ -38,8 +38,8 @@ class AppTextStyle {
       fontWeight: FontWeight.w600);
 
   // text black
-  static final TextStyle textBlack15 = TextStyle(
-      color: AppColors.corTextBlack, fontSize: 15, fontWeight: FontWeight.w400);
+  static final TextStyle textBlack15 =
+      TextStyle(color: AppColors.corTextBlack, fontSize: 18);
 
   static final TextStyle textBlack20 = TextStyle(
       color: AppColors.corTextBlack, fontSize: 20, fontWeight: FontWeight.w400);
